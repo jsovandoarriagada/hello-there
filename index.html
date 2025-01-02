@@ -49,7 +49,9 @@
         who love PvP and having fun. Our goal? Build a team for rated
         battlegrounds.
       </p>
-      <a href="#" class="button button--cta">Apply Now & Join The Battle</a>
+      <a href="#apply" class="button button--cta"
+        >Apply Now & Join The Battle</a
+      >
     </section>
 
     <!-- About Section -->
@@ -130,11 +132,9 @@
         Who's missing? Maybe you.
       </h2>
       <p class="recruitment__description">
-        We're keeping things small to build a tight-knit team, not a mass invite
-        mess. To keep balance and fun, we're only recruiting the classes and
-        specs we need right now. It's not elitism, it's strategy for better
-        premades now and rated BGs later. If your class/spec is grayed out, it's
-        just bad timing.
+        We're keeping it small for a tight crew, not a spam party. Recruiting
+        only what we need—no elitism, just strategy for better premades and
+        rated BGs. If you're grayed out, no personal, just bad timing!
       </p>
       <!-- Class Selection Grid -->
       <div class="class-grid">
@@ -430,7 +430,9 @@
           </div>
         </div>
       </div>
-      <a href="#" class="button button--cta">Apply Now & Join The Battle</a>
+      <a href="#apply" class="button button--cta"
+        >Apply Now & Join The Battle</a
+      >
     </section>
 
     <!-- Requirements Section -->
@@ -455,20 +457,96 @@
             3️⃣ Know your class, follow calls, and prioritize team success.
           </li>
           <li class="list__item">
-            4️⃣ We need players who value teamwork over topping meters.
+            4️⃣ We need players who value teamwork over meters.
           </li>
           <li class="list__item">
             5️⃣ Show commitment. Casual doesn't mean careless.
           </li>
+          <li class="list__item">6️⃣ Follow and respect our rules.</li>
         </ol>
       </div>
     </section>
 
     <!-- Apply Section -->
-    <section class="apply">
+    <section class="apply" id="apply">
       <h2 class="apply__title heading heading--large">
         Apply here. Bring snacks.
       </h2>
+
+      <p class="apply-description">
+        We're just a ragtag bunch trying to git gud together. Right now, we're
+        only recruiting specific classes because, let's face it, balance
+        matters—nobody wants a team full of rogues (except the rogues).
+      </p>
+      <div class="apply-content content-layout">
+        <form action="#" method="POST" class="apply-form">
+          <div class="form-group">
+            <label for="character-name">Character:</label>
+            <input
+              type="text"
+              id="character-name"
+              name="character-name"
+              required
+            />
+          </div>
+
+          <div class="form-group--double">
+            <div class="form-group">
+              <label for="class">Class:</label>
+              <select id="class" name="class" required>
+                <option value="">Select a Class</option>
+                <option value="warrior">Warrior</option>
+                <option value="paladin">Paladin</option>
+                <option value="hunter">Hunter</option>
+                <option value="rogue">Rogue</option>
+                <option value="priest">Priest</option>
+                <option value="death-knight">Death Knight</option>
+                <option value="shaman">Shaman</option>
+                <option value="mage">Mage</option>
+                <option value="warlock">Warlock</option>
+                <option value="monk">Monk</option>
+                <option value="druid">Druid</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="spec">Spec:</label>
+              <select id="spec" name="spec" required>
+                <option value="">Select a Spec</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="pvp-experience"
+              >Share your experience or comment:</label
+            >
+            <textarea
+              id="pvp-experience"
+              name="pvp-experience"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            Submit Apply Now & Join The Battle
+          </button>
+        </form>
+        <img src="./images/heroes/varian.webp" alt="Varian Wrynn" />
+      </div>
     </section>
+    <footer>
+      <p>
+        &copy; 2025
+        <a
+          class="accent"
+          href="https://logs.stormforge.gg/en/guild/sheilun/hello-there"
+          target="_blank"
+          rel="noopener noreferrer"
+          >&lt;hello there&gt;</a
+        >. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
