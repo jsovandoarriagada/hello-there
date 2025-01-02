@@ -1,0 +1,185 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Layout */
+.page {
+  background-image: url("../images/background/pattern.webp");
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #e5e5e5;
+  display: grid;
+  place-items: center;
+  max-width: 100vw;
+}
+
+/* Typography */
+.heading {
+  font-family: "Oswald", serif;
+  text-transform: uppercase;
+}
+
+.heading--large {
+  font-size: 32px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.button--cta {
+  color: #e5e5e5;
+  background-color: #ce172b;
+}
+
+.button--cta:hover {
+  background-color: #e83145;
+}
+
+/* Section Layout */
+section {
+  padding: 96px 0;
+  border-bottom: solid 1px #2e2e2e;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 32px;
+}
+
+/* Content Layout */
+.content-layout {
+  width: 820px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Lists */
+.list {
+  width: 100%;
+  list-style: none;
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list__item {
+  text-align: start;
+}
+
+/* Hero Section */
+.hero__description {
+  color: #999;
+  max-width: 720px;
+}
+
+.hero__link {
+  color: #00ff00;
+}
+
+/* Class Grid */
+.class-grid {
+  display: flex;
+  gap: 4px;
+}
+
+.class-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.class-block__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.class-block__specs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.class-block__spec {
+  width: 28px;
+  height: 28px;
+}
+
+.class-block__icon--disabled,
+.class-block__spec--disabled {
+  filter: grayscale(100%);
+  cursor: not-allowed;
+}
+
+/* Recruitment Section */
+.recruitment__description {
+  color: #999;
+  max-width: 800px;
+}
+
+/* About Section */
+.about-showcase {
+  display: flex;
+  gap: 8px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.about-details {
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #999;
+}
+
+/* About Details Layout */
+.about-details__top,
+.about-details__bottom--left,
+.about-details__bottom--right {
+  background-color: #151515;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.about-details__top {
+  width: 100%;
+  height: 50%;
+}
+
+.about-details__bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 8px;
+}
+
+.about-details__bottom--left,
+.about-details__bottom--right {
+  width: 100%;
+}
+
+.accent {
+  color: #00ff00;
+}
